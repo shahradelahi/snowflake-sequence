@@ -1,6 +1,6 @@
 {
   "name": "@se-oss/snowflake-sequence",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A lightweight TypeScript library for generating and working with Snowflake IDs.",
   "keywords": [
     "snowflake",
