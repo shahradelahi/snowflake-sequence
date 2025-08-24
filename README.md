@@ -1,6 +1,6 @@
 # @se-oss/snowflake-sequence
 
-[![CI](https://github.com/shahradelahi/snowflake-sequence/actions/workflows/ci.yml/badge.svg)](https://github.com/shahradelahi/snowflake-sequence/actions/workflows/ci.yml)
+[![CI](https://github.com/shahradelahi/snowflake-sequence/actions/workflows/ci.yml/badge.svg?branch=main&event=push)](https://github.com/shahradelahi/snowflake-sequence/actions/workflows/ci.yml)
 [![NPM Version](https://img.shields.io/npm/v/@se-oss/snowflake-sequence.svg)](https://www.npmjs.com/package/@se-oss/snowflake-sequence)
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](/LICENSE)
 [![Install Size](https://packagephobia.com/badge?p=@se-oss/snowflake-sequence)](https://packagephobia.com/result?p=@se-oss/snowflake-sequence)
