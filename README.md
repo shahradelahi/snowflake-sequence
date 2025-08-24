@@ -5,10 +5,11 @@
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](/LICENSE)
 [![Install Size](https://packagephobia.com/badge?p=@se-oss/snowflake-sequence)](https://packagephobia.com/result?p=@se-oss/snowflake-sequence)
 
-A lightweight TypeScript library for generating and working with Snowflake IDs.
+A lightweight, high-performance TypeScript library for generating and deconstructing [Twitter Snowflake IDs](https://blog.twitter.com/engineering/en_us/a/2010/announcing-snowflake).
 
 ---
 
+- [What is a Snowflake ID?](#-what-is-a-snowflake-id)
 - [Features](#-features)
 - [Installation](#-installation)
 - [Usage](#-usage)
@@ -16,11 +17,24 @@ A lightweight TypeScript library for generating and working with Snowflake IDs.
 - [Contributing](#-contributing)
 - [License](#license)
 
+## ❄️ What is a Snowflake ID?
+
+A Snowflake ID is a unique, 64-bit identifier that is highly available and sorted by time. It was developed by Twitter to generate unique IDs for tweets and other objects in their distributed systems. Unlike traditional database sequences, Snowflake IDs are generated without the need for a centralized authority, making them ideal for distributed environments.
+
+A Snowflake ID is composed of the following parts:
+
+- **Timestamp (41 bits):** The number of milliseconds since a custom epoch.
+- **Node ID (10 bits):** A unique identifier for the machine or process generating the ID.
+- **Sequence (12 bits):** A sequence number that is incremented for each ID generated within the same millisecond.
+
+This structure allows for the generation of up to 4,096 unique IDs per millisecond per node.
+
 ## ✨ Features
 
 - ✅ **BigInt Support**: Natively handles 64-bit integers for precision and safety.
 - ✅ **Customizable**: Configure node IDs and epochs to suit your distributed system's needs.
 - ✅ **Deconstruction**: Easily extract timestamp, node ID, and sequence from any Snowflake ID.
+- ✅ **High-Performance**: Generates millions of IDs per second.
 - ✅ **Pure TypeScript**: Written entirely in TypeScript with zero dependencies.
 
 ## 📦 Installation
