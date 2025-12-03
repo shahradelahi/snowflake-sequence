@@ -51,7 +51,7 @@
     "prettier": "^3.5.2",
     "tsup": "^8.4.0",
     "typescript": "^5.7.3",
-    "vitest": "^3.0.7"
+    "vitest": "^4.0.15"
   },
   "packageManager": "pnpm@9.15.6"
 }
